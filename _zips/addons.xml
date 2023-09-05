@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.rdtools" version="1.0.7" name="Real-Debrid Tools" provider-name="The Papaw">
+<addon id="plugin.video.rdtools" version="1.0.8" name="Real-Debrid Tools" provider-name="The Papaw">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.beautifulsoup4" />
-		<import addon="script.module.requests" />
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.requests"/>
 
 
 	</requires>
