@@ -32,7 +32,7 @@
     </extension>
 </addon>
 
-<addon id="script.psgc.launcher" name="PSGC Launcher" version="1.0.1" provider-name="The Papaw">
+<addon id="script.psgc.launcher" name="PSGC Launcher" version="1.0.2" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -42,7 +42,7 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="en_GB">Launches LaunchBox in Big Box mode from within PSMC.</summary>
         <disclaimer lang="en_GB">For bugs, requests or general questions visit the PSMC-20 Repository on GitHub.</disclaimer>
-        <description lang="en_GB">Launches Big Box from within PSMC - It will close or minimize PSMC and when Big Box is exited, PSMC will restart or maximize. Also has options to run programs pre or post BigBox. It works with PSMC or Kodi on Windows platform ONLY.[CR]Please consider supporting our efforts with a [B][COLOR deepskyblue]"cup of coffee"[/COLOR][/B] by scanning the QR code</description>
+        <description lang="en_GB">Launches Big Box from within PSMC - It will close or minimize PSMC and when Big Box is exited, PSMC will restart or maximize. Also has options to run programs pre or post BigBox. It works with PSMC or Kodi on Windows platform ONLY.[CR][CR]Please consider supporting our efforts with a [B][COLOR deepskyblue]"cup of coffee"[/COLOR][/B] by scanning the QR code above</description>
         <news>Inital Release.</news>
         <platform>windx</platform>
         <language>en</language>
