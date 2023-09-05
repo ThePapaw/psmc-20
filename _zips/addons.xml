@@ -33,7 +33,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.psmc-20" name="PSMC-20 Repository" version="1.0.1" provider-name="The Papaw">
+<addon id="repository.psmc-20" name="PSMC-20 Repository" version="1.0.2" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
