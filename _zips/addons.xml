@@ -59,7 +59,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.psmc-20" name="PSMC-20 Repository" version="1.1.1" provider-name="The Papaw">
+<addon id="repository.psmc-20" name="PSMC-20 Repository" version="1.1.2" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -87,7 +87,7 @@
             <screenshot>resources/screenshot-01.jpg</screenshot>
 			<screenshot>resources/bmc.jpg</screenshot>
 		</assets>
-		<news>If you would like to show your appreciation for the time and efforts I put into these projects, please buy me [B][COLOR deepskyblue]"a cup of coffee"[/COLOR][/B] by visiting [COLOR deepskyblue]bit.ly/3Lb5nd5[/COLOR].[CR][CR][COLOR gold]Latest Update:[/COLOR][CR]v1.1.1[CR] - Added Support QR Code</news>
+		<news>If you would like to show your appreciation for the time and efforts I put into these projects, please buy me [B][COLOR deepskyblue]"a cup of coffee"[/COLOR][/B] by scanning the QR code or visiting [COLOR deepskyblue]bit.ly/3Lb5nd5[/COLOR].[CR][CR][COLOR gold]Latest Update:[/COLOR][CR]v1.1.2[CR] - Added Support QR Code</news>
     </extension>
 </addon>
 
