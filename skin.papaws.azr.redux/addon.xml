@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.papaws.azr.redux" version="1.3.3" name="Papaw's AZR Redux" provider-name="The Papaw">
+<addon id="skin.papaws.azr.redux" version="1.3.4" name="Papaw's AZR Redux" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
+        <import addon="resource.uisounds.pazr" />
         <import addon="script.skinshortcuts" />
         <import addon="script.globalsearch" />
         <import addon="script.image.resource.select" />
-        <import addon="resource.uisounds.pazr" optional="true" />
         <import addon="resource.images.weathericons.white" />
         <import addon="script.embuary.info" />
         <import addon="script.embuary.helper" />

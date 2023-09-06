@@ -1,5 +1,2 @@
-[B]1.2.1[/B]
-misc changes
-
-[B]1.1.1[/B]
-Initial matrix Release
+[B]1.3.4[/B]
+Added Support QR Code
