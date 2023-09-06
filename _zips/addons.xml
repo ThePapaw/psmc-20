@@ -91,7 +91,7 @@
     </extension>
 </addon>
 
-<addon id="resource.uisounds.pazr" version="1.0.0" name="Papaws AZR Redux GUI Sounds" provider-name="The Papaw">
+<addon id="resource.uisounds.pazr" version="1.0.1" name="Papaws AZR Redux GUI Sounds" provider-name="The Papaw">
   <requires>
     <import addon="kodi.resource" version="1.0.0"/>
   </requires>
@@ -102,6 +102,9 @@
     <platform>all</platform>
     <assets>
       <icon>icon.png</icon>
+	  <fanart>fanart.jpg</fanart>
+	  <screenshot>support/screenshot-01.jpg</screenshot>
+	  <screenshot>support/bmc-qr.jpg</screenshot>
     </assets>
   </extension>
 </addon>
