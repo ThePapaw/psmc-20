@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.program.psmcmaintenance" name="PSMC Maintenance" version="1.0.15" provider-name="The Papaw">
+<addon id="plugin.program.psmcmaintenance" name="PSMC Maintenance" version="1.0.16" provider-name="The Papaw">
   <requires>
     <import addon="script.module.requests" version="1.0.0" />
   </requires>
@@ -11,7 +11,7 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">A simple all-around Maintenance Tool</summary>
-    <description lang="en">PSMC's Maintenance does many maintenance functions to aid with a much smoother PSMC (Kodi) experience without all the fluff. Features include: Auto delete of cache at start up, notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has Backup/Restore Options, Speed test, and other features!!</description>
+    <description lang="en">PSMC's Maintenance does many maintenance functions to aid with a much smoother PSMC experience without all the fluff. Features include: Auto delete of cache at start up, notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has Backup/Restore Options, Speed test, and other features!![CR][CR]If you would like to show your appreciation for the time and efforts I put into these projects, please scan the "Coffee Cup" (QC code) above and buy me a cup of coffee or subscribe for access to "What's Next" and all future updates. [COLOR limegreen] (Generosity like yours is rare to find these days. I thank you in advance for your support. I am very grateful for your donation and truly appreciate your kindness!)[/COLOR][COLOR skyblue]  • The Papaw[/COLOR]</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
@@ -24,8 +24,10 @@
 		<icon>icon.png</icon>
 		<icon>icon.gif</icon>
 		<fanart>fanart.jpg</fanart>
+        <screenshot>resources/screenshot-01.jpg</screenshot>
+        <screenshot>resources/bmc-qr.jpg</screenshot>
 	</assets>
-	<news></news>
+	<news>added Support QR code</news>
   </extension>
 </addon>
 
