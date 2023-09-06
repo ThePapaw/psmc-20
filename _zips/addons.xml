@@ -217,7 +217,7 @@
     </extension>
 </addon>
 
-<addon id="skin.psmc.super.mario.galaxy" version="1.2.0" name="PSMC's Super Mario Galaxy Skin" provider-name="The Papaw">
+<addon id="skin.psmc.super.mario.galaxy" version="1.2.2" name="PSMC's Super Mario Galaxy Skin" provider-name="The Papaw">
 	<requires>
 		<import addon="xbmc.gui" version="5.15.0" />
 		<import addon="script.skinshortcuts" />
@@ -227,8 +227,8 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-	<news>If you would like to show your appreciation for the time and efforts I put into these projects, please buy me [B][COLOR deepskyblue]"a cup of coffee"[/COLOR][/B] by scanning the QR code or visiting [COLOR deepskyblue]bit.ly/3Lb5nd5[/COLOR].[CR][CR][COLOR gold]Latest Update:[/COLOR][CR]v1.2.0[CR] - Added Support QR Code</news>
-	<summary lang="en">PSMC's Super Mario Galaxy Skin is designed for[COLOR FFFFFF00]Kids[/COLOR] (both young and old) and is a Sylvo type skin. It includes [COLOR FFFFFF00]Home Screen Animations[/COLOR] [I][COLOR FFE67300] that can be toggled on-off in the settings, widgets.[/COLOR][/I]. Lots of features and views to choose from.</summary>
+	<news>If you would like to show your appreciation for the time and efforts I put into these projects, please buy me [B][COLOR deepskyblue]"a cup of coffee"[/COLOR][/B] by scanning the QR code or visiting [COLOR deepskyblue]bit.ly/3Lb5nd5[/COLOR].[CR][CR][COLOR gold]Latest Update:[/COLOR][CR]v1.2.2[CR] - Added Support QR Code</news>
+	<summary lang="en">PSMC's Super Mario Galaxy Skin is designed for[COLOR FFFFFF00]Kids of ALL Ages[/COLOR] and is a Sylvo type skin. It includes [COLOR FFFFFF00]Home Screen Animations[/COLOR] [I][COLOR FFE67300] (can be toggled Off in the settings).[/COLOR][/I]. Double wigets and Lots of features and views to choose from.</summary>
 	<description>[CR][CR]If you would like to show your appreciation for the time and efforts I put into these projects, please scan the "Coffee Cup" (QR code) above and buy me [COLOR deepskyblue]"a cup of coffee"[/COLOR] or visiting [COLOR deepskyblue]bit.ly/3Lb5nd5[/COLOR] to subscribe for access to "What's Next" and all future updates.[CR][CR][COLOR limegreen]Generosity like yours is rare to find these days. I thank you in advance for your support. I am very grateful for EVERY donation and truly appreciate your kindness![/COLOR][COLOR skyblue]  â€¢ The Papaw[/COLOR]</description>
 	<platform>all</platform>
 	<license>CC BY-NC-SA 4.0</license>
