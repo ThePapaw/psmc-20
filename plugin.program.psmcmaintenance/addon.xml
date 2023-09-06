@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.psmcmaintenance" name="PSMC Maintenance" version="1.0.15" provider-name="The Papaw">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">A simple all-around Maintenance Tool</summary>
+    <description lang="en">PSMC's Maintenance does many maintenance functions to aid with a much smoother PSMC (Kodi) experience without all the fluff. Features include: Auto delete of cache at start up, notifies when packages and thumbs reach a set amount of wasted storage space (you can set and change sizes), cuts down on your devices read/writes on the ROM. Also has Backup/Restore Options, Speed test, and other features!!</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+		<license>CC BY-NC-SA 4.0</license>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc-20</website>
+		<source>https://github.com/ThePapaw/psmc-20</source>
+		<video_guide></video_guide>
+	<assets>
+		<icon>icon.png</icon>
+		<icon>icon.gif</icon>
+		<fanart>fanart.jpg</fanart>
+	</assets>
+	<news></news>
+  </extension>
+</addon>
