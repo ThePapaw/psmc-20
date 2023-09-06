@@ -1,1 +1,0 @@
-[B]1.0.7[/B] - Added Support QR code
