@@ -137,13 +137,13 @@
     </extension>
 </addon>
 
-<addon id="skin.papaws.azr.redux" version="1.3.2" name="Papaw's AZR Redux" provider-name="The Papaw">
+<addon id="skin.papaws.azr.redux" version="1.3.3" name="Papaw's AZR Redux" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="script.skinshortcuts" />
         <import addon="script.globalsearch" />
         <import addon="script.image.resource.select" />
-        <import addon="resource.uisounds.pazr" />
+        <import addon="resource.uisounds.pazr" optional="true" />
         <import addon="resource.images.weathericons.white" />
         <import addon="script.embuary.info" />
         <import addon="script.embuary.helper" />
@@ -155,7 +155,9 @@
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <license>CC BY-NC-SA 4.0</license>
-        <source>https://github.com/ThePapaw/psmc-19</source>
+		<forum></forum>
+		<website>https://github.com/ThePapaw/psmc-20</website>
+        <source>https://github.com/ThePapaw/psmc-20</source>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -170,7 +172,7 @@
             <screenshot>resources/screenshot-09.jpg</screenshot>
             <screenshot>resources/bmc_qr.jpg</screenshot>
         </assets>
-        <news>1.3.2[CR]- Added Support QR Code</news>
+        <news>1.3.3[CR]- Added Support QR Code</news>
         <summary lang="de">Overweeg alstublieft om onze inspanningen te ondersteunen met een [B][COLOR deepskyblue]"kopje koffie"[/COLOR][/B] door de onderstaande QR-code te scannen.</summary>
         <summary lang="en">Please consider supporting our efforts with a [B][COLOR deepskyblue]"cup of coffee"[/COLOR][/B] by scanning the QR code below.</summary>
         <summary lang="en_AU">Please consider supporting our efforts with a [B][COLOR deepskyblue]"cup of coffee"[/COLOR][/B] by scanning the QR code below.</summary>
