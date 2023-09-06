@@ -59,7 +59,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.psmc-20" name="PSMC-20 Repository" version="1.0.4" provider-name="The Papaw">
+<addon id="repository.psmc-20" name="PSMC-20 Repository" version="1.0.5" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -73,7 +73,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>The Official Repo for PSMC-20</summary>
-        <description>[CR]This is the "Official" repository for PSMC-20 (Papaw's Son Media Center). Providing skins, tools, gaming streaming addons and more for PSMC-20 (a Kodi fork).[CR][CR]Please consider supporting our efforts with a [B][COLOR deepskyblue]"cup of coffee"[/COLOR][/B] by scanning the QR code or visiting [COLOR deepskyblue]https://bit.ly/3Lb5nd5[/COLOR]. [CR][COLOR limegreen](Generosity like yours is rare to find these days. I thank you in advance for your support. I am very grateful for your donation and truly appreciate your kindness!)[/COLOR][COLOR skyblue]  â€¢ The Papaw[/COLOR]</description>
+        <description>[CR]This is the "Official" repository for PSMC-20 (Papaw's Son Media Center). Providing skins, tools, gaming, and streaming addons for PSMC-20 or Kodi.[CR][CR]Please consider supporting our efforts with a [B][COLOR deepskyblue]"cup of coffee"[/COLOR][/B] by scanning the QR code or visiting [COLOR deepskyblue]https://bit.ly/3Lb5nd5[/COLOR]. [CR][COLOR limegreen](Generosity like yours is rare to find these days. I thank you in advance for your support. I am very grateful for your donation and truly appreciate your kindness!)[/COLOR][COLOR skyblue]  â€¢ The Papaw[/COLOR]</description>
         <platform>all</platform>
 		<license>CC BY-NC-SA 4.0</license>
 		<forum></forum>
