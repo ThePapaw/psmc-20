@@ -257,117 +257,117 @@
 		</font>
 		<font>
 			<name>font10</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>21</size>
 		</font>
 		<font>
 			<name>font12</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>26</size>
 		</font>
 		<font>
 			<name>font13</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>30</size>
 		</font>
 		<font>
 			<name>font14_textbox</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>33</size>
 			<linespacing>1.27</linespacing>
 		</font>
 		<font>
 			<name>font14_textbox2</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>33</size>
 			<linespacing>1.1</linespacing>
 		</font>
 		<font>
 			<name>font15_textbox</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>35</size>
 			<linespacing>1.4</linespacing>
 		</font>
 		<font>
 			<name>font15_textbox2</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>35</size>
 			<linespacing>1.7</linespacing>
 		</font>
 		<font>
 			<name>font14</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>33</size>
 		</font>
 		<font>
 			<name>font15</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>35</size>
 		</font>
 		<font>
 			<name>font15_bold</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<style>bold</style>
 			<size>35</size>
 		</font>
 		<font>
 			<name>font16</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>38</size>
 		</font>
 		<font>
 			<name>font30</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>45</size>
 		</font>
 		<font>
 			<name>font48</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>48</size>
 		</font>
 		<font>
 			<name>font48_bold</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<style>bold</style>
 			<size>48</size>
 		</font>
 		<!-- LiveTV Fonts -->
 		<font>
 			<name>font65</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>65</size>
 		</font>
 		<font>
 			<name>font24_bold</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>24</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>font28_bold</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>28</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>font52_bold</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<style>bold</style>
 			<size>48</size>
 		</font>
 		<font>
 			<name>font11</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>24</size>
 		</font>
 		<font>
 			<name>font12b</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>28</size>
 		</font>
 		<font>
 			<name>font13b</name>
-			<filename>ALBA.ttf</filename>
+			<filename>Spooky.ttf</filename>
 			<size>32</size>
 		</font>
 		<!-- Title Fonts -->
