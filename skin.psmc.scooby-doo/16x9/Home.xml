@@ -182,24 +182,25 @@
 			<!-- Ghost Right Animation -->
 			<control type="image">
 				<left>1300</left>
-				<top>-75</top>
-				<width>400</width>
-				<height>300</height>
+				<top>0</top>
+				<width>325</width>
+				<height>275</height>
 				<texture flipx="false" border="0">animated-ghost.gif</texture>
 				<animation effect="fade" start="0%" end="100%" time="8300" delay="6000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
 				<animation effect="fade" start="100%" end="0%" time="8300" delay="6000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0" end="-2400,0" time="4300" delay="7000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Ghost Left Animation 1 -->
 			<control type="image">
 				<left>150</left>
-				<top>100</top>
+				<top>280</top>
 				<width>275</width>
 				<height>225</height>
 				<texture flipx="true" border="0">animated-ghost.gif</texture>
 				<animation effect="fade" start="0%" end="100%" time="8300" delay="15000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
 				<animation effect="fade" start="100%" end="0%" time="8300" delay="15000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
-				<animation effect="slide" start="0,0" end="2800" time="4300" delay="16000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800,-1000" time="4300" delay="16000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Cloud Animation -->
@@ -246,7 +247,7 @@
 			<!-- Van Animation -->
 			<control type="image">
 				<left>-2400</left>
-				<top>370</top>
+				<top>365</top>
 				<width>4000</width>
 				<height>300</height>
 				<texture flipx="false" border="0">mystery_machine.png</texture>
@@ -257,7 +258,7 @@
 			<!-- Running Shaggy & Scooby Animation Right -->
 			<control type="image">
 				<left>-3000</left>
-				<top>500</top>
+				<top>490</top>
 				<width>2600</width>
 				<height>180</height>
 				<texture flipx="true" border="0">shaggy_scooby.gif</texture>
@@ -267,8 +268,8 @@
 			
 			<!-- Running Shaggy & Scooby Animation Left -->
 			<control type="image">
-				<left>-2000</left>
-				<top>500</top>
+				<left>-1900</left>
+				<top>490</top>
 				<width>2600</width>
 				<height>180</height>
 				<texture flipx="false" border="0">shaggy_scooby.gif</texture>
@@ -321,7 +322,28 @@
 					<aspectratio scalediffuse="false">keep</aspectratio>
 					<animation effect="slide" start="0,0" end="3000" time="4300" delay="12000" reversible="false" loop="false" condition="true">Conditional</animation>
 					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="12000" reversible="false" pulse="false" condition="true">Conditional</animation>
-				</control>
+				</control>	
+			
+			<!-- Background Bats -->
+			<control type="image">
+				<right>0</right>
+				<top>0</top>
+				<width>1920</width>
+				<height>1080</height>
+				<texture flipx="false" border="0">bats-2.gif</texture>
+				<animation effect="fade" start="0%" end="15%" time="5000" delay="23000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>				
+			</control>
+			
+			<!-- Zooming Bats 1 -->
+			<control type="image">
+				<right>0</right>
+				<top>-375</top>
+				<width>1920</width>
+				<height>1080</height>
+				<texture flipx="false" border="0">bats-zooming.gif</texture>
+				<animation effect="fade" start="0%" end="100%" time="6000" delay="23000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10" delay="25000" reversible="false" loop="false" condition="true">Conditional</animation>
+			</control>	
 				
 				<control type="image">
 			<posx>1000</posx>
