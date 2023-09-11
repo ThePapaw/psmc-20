@@ -69,6 +69,11 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultMovies.png</icon>
 			<thumb />
+			<property name="InfoLine">31052</property>
+			<property name="widgetName">31031</property>
+			<property name="widgetType">movies</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetCase">Case</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick condition="Library.HasContent(Movies)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://movies/titles/,return)</property>
@@ -886,4 +891,215 @@
 	<include name="skinshortcuts-submenu-1" />
 	<include />
 	<include name="skinshortcuts-submenu-2" />
+	<include name="skinshortcuts-template-widget1">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget1-Master user</include>
+		</include>
+	<include name="skinshortcuts-template-widget1-Master user">
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-20342)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80116).NumItems,0)</visible>
+				<control type="group">
+					<top>457</top>
+					<control type="group">
+						<include condition="!String.IsEmpty(Skin.String(Widget.Trans))">HomeWidgetFade</include>
+						<centerleft>50%</centerleft>
+						<top>-21</top>
+						<width>1472.5</width>
+						<height>276</height>
+						<control type="image">
+							<width>1472.5</width>
+							<height>276</height>
+							<texture colordiffuse="$VAR[HomeWidgetBackColor]" border="40">$VAR[HomeWidgetBackgroundVar]</texture>
+							<visible>Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
+							</control>
+						<control type="image">
+							<width>1472.5</width>
+							<height>276</height>
+							<texture colordiffuse="FF0B0B0B" border="40">homewidgets/bg_default.png</texture>
+							<visible>!Skin.HasSetting(Enable.GlobalWidgetBack)</visible>
+							</control>
+						</control>
+					<include content="PanelLabel">
+						<param name="id">80116</param>
+						<param name="Label">31031</param>
+						<param name="Title">$VAR[HomeWidgetInfoTitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">252</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+						</include>
+					</control>
+				</control>
+			<control type="group">
+				<top>457</top>
+				<control type="panel" id="80116">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime tween="quadratic" easing="out">300</scrolltime>
+					<include>skinshortcuts-template-HorizontalNavigation1</include>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[PosterThumbVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">19</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">211</param>
+						<param name="topFakeDiscArt">10.75</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">5</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/cases/default/poster/$VAR[GlobalCaseVar]</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">false</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+						</include>
+					<content target="videos" sortby="" sortorder="" limit="">special://skin/extras/playlists/randommovies.xsp</content>
+					</control>
+				</control>
+			</control>
+		</include>
+	<include name="skinshortcuts-template-HorizontalNavigation1">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-HorizontalNavigation1-Master user</include>
+		</include>
+	<include name="skinshortcuts-template-HorizontalNavigation1-Master user">
+		<onup condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Control.IsVisible(90020) + !Skin.HasSetting(centermainmenu)">90020</onup>
+		<onup condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + [Control.IsVisible(9027) | System.HasMediaDVD]">9020</onup>
+		<onup condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + ![Control.IsVisible(9027) | System.HasMediaDVD]">9000</onup>
+		<ondown condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + ![System.HasMediaDVD | Control.IsVisible(9027)]">9000</ondown>
+		<ondown condition="!String.IsEqual(Skin.String(MainMenu.Layout),vertical) + [System.HasMediaDVD | Control.IsVisible(9027)]">9020</ondown>
+		<ondown condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + Control.IsVisible(90020)">90020</ondown>
+		<ondown condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !Control.IsVisible(90020) + [Control.IsVisible(9027) | System.HasMediaDVD]">9020</ondown>
+		<ondown condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical) + !Control.IsVisible(90020) + ![Control.IsVisible(9027) | System.HasMediaDVD]">9000</ondown>
+		<onleft condition="String.IsEqual(Skin.String(MainMenu.Layout),vertical)">9000</onleft>
+		<onback>9000</onback>
+		</include>
+	<include name="skinshortcuts-template-widget2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-HorizontalNavigation2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetPoster">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetPoster.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetFanArt">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetFanArt.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetLandscape">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetLandscape.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetClearArt">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetClearArt.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetClearLogo">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetClearLogo.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetThumb">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetThumb.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetCharacterArt">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetCharacterArt.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetBanner">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetBanner.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetTitle">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetTitle.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetTitle2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WidgetTitle2.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WeatherForecastContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WeatherTodayContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-WeatherTomorrowContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemUptime">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemBattery">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemNetwork">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemVideo">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemCPU">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemMemory">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemStorage">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemPVR">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-SystemVersion">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
+	<include name="skinshortcuts-template-NextAiredWidgetContent">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+		</include>
 	</includes>

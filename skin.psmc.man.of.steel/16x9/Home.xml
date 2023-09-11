@@ -191,16 +191,6 @@
 				<animation effect="fade" start="100%" end="0%" time="3000" delay="13000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>				
 			</control>
 				
-			<!-- Background Superman -->
-				<control type="image">
-					<left>250</left>
-					<top>-250</top>
-					<width>1000</width>
-					<height>1000</height>
-					<texture flipx="false" border="0">Man-of-Steel.png</texture>
-					<animation effect="fade" start="0%" end="100%" time="4000" delay="13000" reversible="true" condition="true">Conditional</animation>
-				</control>
-				
 			<!-- Superman ClearLogo -->
 				<control type="image">
 					<left>20</left>
