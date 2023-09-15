@@ -1385,7 +1385,7 @@ msgid "NOT SUPPORTED"
 msgstr ""
 
 msgctxt "#31342"
-msgid "Display the status of some add-ons supported in PSMC's Batman Skin skin. Select an add-on to install or open its settings if already installed."
+msgid "Display the status of some add-ons supported in PSMC's Man of Steel skin. Select an add-on to install or open its settings if already installed."
 msgstr ""
 
 msgctxt "#31343"
@@ -2241,7 +2241,7 @@ msgid "Toggle to enable or disable. You can use disable instead of delete to hid
 msgstr ""
 
 msgctxt "#31554"
-msgid "Choose the menu item icon when the PSMC's Batman Skin main menu layout is set to Icons."
+msgid "Choose the menu item icon when the PSMC's Man of Steel Skin main menu layout is set to Icons."
 msgstr ""
 
 msgctxt "#31555"
@@ -2261,7 +2261,7 @@ msgid "Choose what Widget 1 will display. Widget 1 is always directly above the 
 msgstr ""
 
 msgctxt "#31559"
-msgid "Choose what Widget 2 will display. Widget 2 swaps location depending on the PSMC's Batman Skin main menu horizontal position. If it is low then it will be at the top of the screen and centered will be below the Horizontal menu. Vertical menu location is always near the bottom of the Home window."
+msgid "Choose what Widget 2 will display. Widget 2 swaps location depending on the PSMC's Man of Steel Skin main menu horizontal position. If it is low then it will be at the top of the screen and centered will be below the Horizontal menu. Vertical menu location is always near the bottom of the Home window."
 msgstr ""
 
 msgctxt "#31560"
@@ -2338,7 +2338,7 @@ msgid "Show plot and cast when pressing info during video playback"
 msgstr ""
 
 msgctxt "#31603"
-msgid "PSMC's Batman Skin main menu navigation style"
+msgid "PSMC's Man of Steel Skin main menu navigation style"
 msgstr ""
 
 msgctxt "#31604"
@@ -2609,7 +2609,7 @@ msgid "Blu-Ray Case"
 msgstr ""
 
 msgctxt "#31748"
-msgid "This setting enables more widget customization. Disable to use PSMC's Batman Skin default widgets."
+msgid "This setting enables more widget customization. Disable to use PSMC's Man of Steel Skin default widgets."
 msgstr ""
 
 msgctxt "#31749"
@@ -2707,7 +2707,7 @@ msgid "Use this setting to override the location of the Trailers button when usi
 msgstr ""
 
 msgctxt "#31855"
-msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Batman Skin version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
+msgid "Enable this setting to replace the Default info with online info provided by the ExtendedInfo script. You can use the PSMC's Man of Steel Skin version or the Defaults provided by the script if you enable the option in the settings for ExtendedInfo."
 msgstr ""
 
 msgctxt "#31856"
@@ -2749,7 +2749,7 @@ msgid "Map & Alerts"
 msgstr ""
 
 msgctxt "#31911"
-msgid "Setup the PSMC's Batman Skin main menu"
+msgid "Setup the PSMC's Man of Steel Skin main menu"
 msgstr ""
 
 msgctxt "#31912"
@@ -2757,7 +2757,7 @@ msgid "Customize the main menu with widgets, backgrounds, and statistics. Add yo
 msgstr ""
 
 msgctxt "#31913"
-msgid "PSMC's Batman Skin main menu horizontal position"
+msgid "PSMC's Man of Steel Skin main menu horizontal position"
 msgstr ""
 
 msgctxt "#31914"
@@ -2769,7 +2769,7 @@ msgid "Navigation style for horizontal lists"
 msgstr ""
 
 msgctxt "#31916"
-msgid "Change the way horizontal lists scroll in PSMC's Batman Skin. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
+msgid "Change the way horizontal lists scroll in PSMC's Man of Steel Skin. Default will scroll lists in a cycle. \"Fixed\" are lists with a beginning and end."
 msgstr ""
 
 msgctxt "#31917"
@@ -2814,7 +2814,7 @@ msgid "Resets all above values to their defaults."
 msgstr ""
 
 msgctxt "#31928"
-msgid "PSMC's Batman Skin main menu layout"
+msgid "PSMC's Man of Steel Skin main menu layout"
 msgstr ""
 
 msgctxt "#31929"
@@ -2983,7 +2983,7 @@ msgid "Sliding set discart"
 msgstr ""
 
 msgctxt "#31980"
-msgid "Change the way the home menu scrolls in PSMC's Batman Skin. Default will scroll in a cycle. \"Fixed\" has a beginning and end."
+msgid "Change the way the home menu scrolls in PSMC's Man of Steel Skin. Default will scroll in a cycle. \"Fixed\" has a beginning and end."
 msgstr ""
 
 msgctxt "#31981"
