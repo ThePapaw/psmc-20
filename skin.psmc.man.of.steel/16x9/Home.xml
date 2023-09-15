@@ -176,9 +176,9 @@
 					<width>167</width>
 					<height>226</height>
 					<texture flipx="true" border="0">superman_flying_up.gif</texture>
-					<animation effect="slide" start="200,-50" end="210,-1500" time="1500" delay="10000" reversible="false" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="2000" delay="10000" reversible="false" condition="true">Conditional</animation>
-					<animation effect="fade" start="0%" end="100%" time="10" delay="10000" reversible="true" condition="true">Conditional</animation>
+					<animation effect="slide" start="200,-50" end="210,-1500" time="1500" delay="11000" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="2000" delay="11000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="fade" start="0%" end="100%" time="10" delay="11000" reversible="true" condition="true">Conditional</animation>
 				</control>
 			
 			<!-- Man of Steel Skin Startup Logo -->
@@ -245,18 +245,6 @@
 					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="3000" reversible="false" condition="true">Conditional</animation>
 				</control>
 						
-			<!-- Locomotive Moving Right Animation -->
-				<control type="image">
-					<left>-725</left>
-					<top>620</top>
-					<width>656</width>
-					<height>193</height>
-					<texture flipx="false" border="0">locomotive.gif</texture>
-					<animation effect="slide" start="0,0" end="2050" time="3000" delay="2500" reversible="true" loop="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="3000" reversible="false" condition="true">Conditional</animation>
-					<animation effect="fade" start="100%" end="0%" time="100" delay="7000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
-				</control>
-						
 			<!-- Locomotive Moving Left Animation -->
 				<control type="image">
 					<left>-675</left>
@@ -264,8 +252,8 @@
 					<width>656</width>
 					<height>193</height>
 					<texture flipx="false" border="0">locomotive.gif</texture>
-					<animation effect="fade" start="0%" end="100%" time="100" delay="7000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
-					<animation effect="slide" start="2000" end="-200,0" time="6000" delay="7000" reversible="false" loop="false" condition="true">Conditional</animation>
+					<animation effect="fade" start="0%" end="100%" time="100" delay="8000" reversible="false" loop="false"pulse="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2000" end="-200,0" time="6000" delay="8000" reversible="false" loop="false" condition="true">Conditional</animation>
 					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="3000" reversible="false" condition="true">Conditional</animation>
 				</control>
 				
@@ -276,8 +264,8 @@
 					<width>201</width>
 					<height>153</height>
 					<texture flipx="false" border="0">superman.gif</texture>
-					<animation effect="slide" start="2600" end="-200,0" time="7640" delay="6990" reversible="false" loop="false"  condition="true">Conditional</animation>
-					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="7000" reversible="false" condition="true">Conditional</animation>
+					<animation effect="slide" start="2600" end="-200,0" time="7640" delay="7990" reversible="false" loop="false"  condition="true">Conditional</animation>
+					<animation effect="slide" start="-50,0" end="-50,0" time="4300" delay="8000" reversible="false" condition="true">Conditional</animation>
 				</control>
 				
 				<control type="image">
