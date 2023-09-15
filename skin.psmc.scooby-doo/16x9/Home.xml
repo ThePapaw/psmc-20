@@ -327,11 +327,12 @@
 			<!-- Background Bats -->
 			<control type="image">
 				<right>0</right>
-				<top>0</top>
+				<top>-350</top>
 				<width>1920</width>
 				<height>1080</height>
 				<texture flipx="false" border="0">bats-2.gif</texture>
-				<animation effect="fade" start="0%" end="15%" time="5000" delay="23000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>				
+				<animation effect="fade" start="0%" end="50%" time="5000" delay="3000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>	
+				<animation effect="fade" start="50%" end="0%" time="5000" delay="25000" reversible="false" loop="false" pulse="false" condition="true">Conditional</animation>			
 			</control>
 			
 			<!-- Zooming Bats 1 -->
