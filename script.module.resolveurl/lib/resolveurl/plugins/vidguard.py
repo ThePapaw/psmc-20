@@ -27,8 +27,10 @@ from resolveurl.resolver import ResolveUrl, ResolverError
 
 class VidGuardResolver(ResolveUrl):
     name = 'VidGuard'
-    domains = ['vidguard.to', 'vgfplay.com', 'vgembed.com', 'moflix-stream.day']
-    pattern = r'(?://|\.)((?:vidguard|vgfplay|vgembed|moflix-stream)\.(?:to|com|day))/(?:e|v|d)/([0-9a-zA-Z]+)'
+    domains = ['vidguard.to', 'vgfplay.com', 'vgembed.com', 'moflix-stream.day',
+               'v6embed.xyz', 'vid-guard.com', 'vembed.net']
+    pattern = r'(?://|\.)((?:vidguard|vgfplay|vgembed|moflix-stream|v6embed|vid-guard|vembed)' \
+              r'\.(?:to|com|day|xyz|net))/(?:e|v|d)/([0-9a-zA-Z]+)'
 
     def get_media_url(self, host, media_id):
         web_url = self.get_url(host, media_id)
