@@ -10,7 +10,7 @@
 			<property name="widgetName">517</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetStyle">Compact Panel</property>
-			<property name="widgetCase">Case</property>
+			<property name="widgetCase">Clear Case</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(Music,files)</onclick>
 			<property name="path">ActivateWindow(Music,files)</property>
@@ -114,11 +114,8 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultVideo.png</icon>
 			<thumb />
-			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
-			<onclick>ActivateWindow(Videos,root)</onclick>
-			<property name="path">ActivateWindow(Videos,root)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">videos</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">True</property>
 			</item>
 		<item id="8">
@@ -210,7 +207,7 @@
 			<property name="widgetName">$ADDON[service.library.data.provider 32022]</property>
 			<property name="widgetType">musicvideos</property>
 			<property name="widgetStyle">Compact Panel</property>
-			<property name="widgetCase">Case</property>
+			<property name="widgetCase">Clear Case</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick condition="Library.HasContent(MusicVideos)">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</onclick>
 			<property name="path">ActivateWindow(Videos,videodb://musicvideos/titles/,return)</property>
@@ -225,11 +222,8 @@
 			<label2 />
 			<icon>special://skin/extras/icons/DefaultPicture.png</icon>
 			<thumb />
-			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
-			<onclick>ActivateWindow(Pictures,return)</onclick>
-			<property name="path">ActivateWindow(Pictures,return)</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">num-1</property>
+			<visible>False</visible>
+			<onclick>noop</onclick>
 			<property name="hasSubmenu">True</property>
 			</item>
 		</include>
@@ -1071,7 +1065,7 @@
 						<param name="Aspect">keep</param>
 						<param name="Aligny">top</param>
 						<param name="Diffuse" />
-						<param name="Case">homewidgets/cases/default/square/cd.png</param>
+						<param name="Case">homewidgets/cases/clearcase/square/cd.png</param>
 						<param name="labelVisible">false</param>
 						<param name="labelFocusVisible">false</param>
 						<param name="isWeather">false</param>
@@ -1603,7 +1597,7 @@
 						<param name="Aspect">keep</param>
 						<param name="Aligny">top</param>
 						<param name="Diffuse" />
-						<param name="Case">homewidgets/cases/default/square/cd.png</param>
+						<param name="Case">homewidgets/cases/clearcase/square/cd.png</param>
 						<param name="labelVisible">false</param>
 						<param name="labelFocusVisible">false</param>
 						<param name="isWeather">false</param>
