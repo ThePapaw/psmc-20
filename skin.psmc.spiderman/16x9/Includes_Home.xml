@@ -518,8 +518,8 @@
 	<!-- Layouts -->
 	<include name="MainMenuListContent">
 		<left>-290</left>
-		<top>62</top>
-		<width>2800</width>
+		<top>70</top>
+		<width>100%</width>
 		<height>100</height>
 		<onleft>9000</onleft>
 		<onright>9000</onright>

@@ -199,6 +199,7 @@
 				<texture flipx="false" border="0">hanging_spiderman.gif</texture>
 				<animation effect="fade" start="100%" end="100%" time="10000" delay="4000" reversible="false" loop="true" condition="true">Conditional</animation>
 				<animation effect="slide" start="0,0" end="1400" time="60000" delay="4000" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="65000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Moon Spider Animation -->
@@ -209,6 +210,7 @@
 				<height>120</height>
 				<texture flipx="false" flipy="false" border="0">moon_spider.gif</texture>
 				<animation effect="fade" start="35%" end="35%" time="4000" delay="8000" reversible="false" loop="true" condition="true">Conditional</animation>
+				<animation effect="fade" start="100%" end="0%" time="10000" delay="65000" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<control type="image">
