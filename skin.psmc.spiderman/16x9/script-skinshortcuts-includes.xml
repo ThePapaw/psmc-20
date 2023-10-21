@@ -10,7 +10,7 @@
 			<property name="widgetName">517</property>
 			<property name="widgetType">albums</property>
 			<property name="widgetStyle">Compact Panel</property>
-			<property name="widgetCase">Clear Case</property>
+			<property name="widgetCase">Case</property>
 			<onclick condition="String.IsEqual(ListItem.Property(path),ActivateWindow(1129))">SetProperty(CustomSelectSearch,True,Home)</onclick>
 			<onclick>ActivateWindow(Music,files)</onclick>
 			<property name="path">ActivateWindow(Music,files)</property>
@@ -1065,7 +1065,7 @@
 						<param name="Aspect">keep</param>
 						<param name="Aligny">top</param>
 						<param name="Diffuse" />
-						<param name="Case">homewidgets/cases/clearcase/square/cd.png</param>
+						<param name="Case">homewidgets/cases/default/square/cd.png</param>
 						<param name="labelVisible">false</param>
 						<param name="labelFocusVisible">false</param>
 						<param name="isWeather">false</param>

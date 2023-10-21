@@ -520,7 +520,7 @@
 	<include name="MainMenuListContent">
 		<left>-290</left>
 		<top>70</top>
-		<width>100%</width>
+		<width>2800</width>
 		<height>100</height>
 		<onleft>9000</onleft>
 		<onright>9000</onright>
