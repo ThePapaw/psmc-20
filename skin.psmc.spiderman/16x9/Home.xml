@@ -172,7 +172,7 @@
 			<!-- Large Spider Animation -->
 			<control type="image">
 				<left>-50</left>
-				<top>550</top>
+				<top>450</top>
 				<width>306</width>
 				<height>158</height>
 				<texture flipx="false" border="0">black_widow.png</texture>
@@ -182,12 +182,12 @@
 			<!-- Black Walking Spider Animation -->
 			<control type="image">
 				<left>450</left>
-				<top>650</top>
+				<top>550</top>
 				<width>204</width>
 				<height>104</height>
 				<texture flipx="true" border="0">black_walking_spider.gif</texture>
 				<aspectratio scalediffuse="false">keep</aspectratio>
-				<animation effect="slide" start="0,0" end="2800" time="5000" delay="5500" reversible="false" loop="false" condition="true">Conditional</animation>
+				<animation effect="slide" start="0,0" end="2800" time="5000" delay="6500" reversible="false" loop="false" condition="true">Conditional</animation>
 			</control>
 			
 			<!-- Hanging Spiderman Animation -->
