@@ -21,7 +21,7 @@ import sys
 import urllib
 
 from urllib.parse import urlencode
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 
 import xbmc, xbmcaddon, xbmcgui, xbmcplugin, xbmcvfs
 import time
@@ -440,8 +440,8 @@ def metaFile():
          return os.path.join(dataPath, 'meta.db')
 
 def metaFile_old():
-    if condVisibility('System.HasAddon(script.thecrew.metadata)'):
-        return os.path.join( xbmcaddon.Addon('script.thecrew.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
+    if condVisibility('System.HasAddon(script.fuzzybritchesv4.metadata)'):
+        return os.path.join( xbmcaddon.Addon('script.fuzzybritchesv4.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
 
 def apiLanguage(ret_name=None):
     langDict = {

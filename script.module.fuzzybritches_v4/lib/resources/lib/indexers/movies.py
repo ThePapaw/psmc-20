@@ -51,7 +51,7 @@ from sqlite3 import dbapi2 as database
 import six
 from six.moves import zip, range
 
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 
 params = dict(parse_qsl(sys.argv[2].replace('?', ''))) if len(sys.argv) > 1 else dict()
 action = params.get('action')
@@ -1355,9 +1355,9 @@ class movies:
                 castwiththumb = '0'
 
             try:
-                crew = item['credits']['crew']
-                director = ', '.join([d['name'] for d in [x for x in crew if x['job'] == 'Director']])
-                writer = ', '.join([w['name'] for w in [y for y in crew if y['job'] in ['Writer', 'Screenplay', 'Author', 'Novel']]])
+                fuzzybritchesv4 = item['credits']['fuzzybritchesv4']
+                director = ', '.join([d['name'] for d in [x for x in fuzzybritchesv4 if x['job'] == 'Director']])
+                writer = ', '.join([w['name'] for w in [y for y in fuzzybritchesv4 if y['job'] in ['Writer', 'Screenplay', 'Author', 'Novel']]])
             except:
                 director = writer = '0'
 

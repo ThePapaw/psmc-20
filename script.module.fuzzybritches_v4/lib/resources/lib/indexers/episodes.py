@@ -51,7 +51,7 @@ from resources.lib.modules import workers
 from resources.lib.modules import views
 from resources.lib.modules import utils
 #from resources.lib.modules import log_utils
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 
 params = dict(parse_qsl(sys.argv[2].replace('?', ''))) if len(
     sys.argv) > 1 else dict()
@@ -1081,11 +1081,11 @@ class episodes:
                         plot = client.replaceHTMLCodes(str(plot))
 
                     try:
-                        r_crew = item['crew']
+                        r_fuzzybritchesv4 = item['fuzzybritchesv4']
                         director = [
-                            d for d in r_crew if d['job'] == 'Director']
+                            d for d in r_fuzzybritchesv4 if d['job'] == 'Director']
                         director = ', '.join([d['name'] for d in director])
-                        writer = [w for w in r_crew if w['job'] == 'Writer']
+                        writer = [w for w in r_fuzzybritchesv4 if w['job'] == 'Writer']
                         writer = ', '.join([w['name'] for w in writer])
                     except:
                         director = writer = ''
@@ -1244,10 +1244,10 @@ class episodes:
                     plot = client.replaceHTMLCodes(six.ensure_str(plot, errors='replace'))
 
                 try:
-                    r_crew = item['crew']
-                    director = [d for d in r_crew if d['job'] == 'Director']
+                    r_fuzzybritchesv4 = item['fuzzybritchesv4']
+                    director = [d for d in r_fuzzybritchesv4 if d['job'] == 'Director']
                     director = ', '.join([d['name'] for d in director])
-                    writer = [w for w in r_crew if w['job'] == 'Writer']
+                    writer = [w for w in r_fuzzybritchesv4 if w['job'] == 'Writer']
                     writer = ', '.join([w['name'] for w in writer])
                 except:
                     director = writer = ''
@@ -1609,11 +1609,11 @@ class episodes:
                        # if not episodeplot: episodeplot = '0'
 
                     try:
-                        r_crew = item['crew']
+                        r_fuzzybritchesv4 = item['fuzzybritchesv4']
                         director = [
-                            d for d in r_crew if d['job'] == 'Director']
+                            d for d in r_fuzzybritchesv4 if d['job'] == 'Director']
                         director = ', '.join([d['name'] for d in director])
-                        writer = [w for w in r_crew if w['job'] == 'Writer']
+                        writer = [w for w in r_fuzzybritchesv4 if w['job'] == 'Writer']
                         writer = ', '.join([w['name'] for w in writer])
                     except:
                         director = writer = ''

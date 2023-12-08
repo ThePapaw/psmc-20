@@ -155,10 +155,10 @@ class channels:
             people = trakt.getPeople(imdb, 'movies')
 
             director = writer = ''
-            if 'crew' in people and 'directing' in people['crew']:
-                director = ', '.join([director['person']['name'] for director in people['crew']['directing'] if director['job'].lower() == 'director'])
-            if 'crew' in people and 'writing' in people['crew']:
-                writer = ', '.join([writer['person']['name'] for writer in people['crew']['writing'] if writer['job'].lower() in ['writer', 'screenplay', 'author']])
+            if 'fuzzybritchesv4' in people and 'directing' in people['fuzzybritchesv4']:
+                director = ', '.join([director['person']['name'] for director in people['fuzzybritchesv4']['directing'] if director['job'].lower() == 'director'])
+            if 'fuzzybritchesv4' in people and 'writing' in people['fuzzybritchesv4']:
+                writer = ', '.join([writer['person']['name'] for writer in people['fuzzybritchesv4']['writing'] if writer['job'].lower() in ['writer', 'screenplay', 'author']])
 
             cast = []
             for person in people.get('cast', []):

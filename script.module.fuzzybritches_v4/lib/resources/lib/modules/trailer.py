@@ -25,7 +25,7 @@ import requests
 from resources.lib.modules import client
 from resources.lib.modules import control
 from resources.lib.modules import log_utils
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 from resources.lib.modules import utils
 from resources.lib.modules import cache
 from resources.lib.modules import keys

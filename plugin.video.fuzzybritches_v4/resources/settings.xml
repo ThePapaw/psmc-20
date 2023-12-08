@@ -32,7 +32,7 @@
         <setting id="navi.personal.list" type="bool" label="90169" default="false" />
         <setting id="personal.list" type="text" label="90168" enable="!eq(-1,false)" default="https://" />
         <setting type="lsep" label="90034" />
-        <setting id="adult_pw" type="text" label="90033" default="Enter Here!" />
+        <setting id="adult_pw" type="text" label="90033" default="Enter Password Here!" />
         <setting type="lsep" label="90137" />
         <setting id="navi.movies" type="bool" label="32001" default="true" />
         <setting id="navi.tvshows" type="bool" label="32002" default="true" />

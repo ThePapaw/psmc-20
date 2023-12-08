@@ -27,7 +27,7 @@ import six
 from sqlite3 import dbapi2 as db, OperationalError
 from resources.lib.modules import control
 from resources.lib.modules import utils
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 
 cache_table = 'cache'
 

@@ -80,7 +80,7 @@ def __getTrakt(url, post=None):
             control.infoDialog('Trakt Rate Limit Reached: ' + str(resp_code), sound=True)
             return
         elif resp_code in ['404']:
-            log_utils.log('[The crew] Trakt error: Object Not Found : %s' % resp_code)
+            log_utils.log('[Fuzzy Britches v4] Trakt error: Object Not Found : %s' % resp_code)
             return
 
         if resp_code not in ['401', '403', '405']:

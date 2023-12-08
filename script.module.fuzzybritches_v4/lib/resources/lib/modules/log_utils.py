@@ -24,7 +24,7 @@ import traceback
 from io import open
 
 from resources.lib.modules import control
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 
 LOGDEBUG = xbmc.LOGDEBUG
 
@@ -43,7 +43,7 @@ if control.setting('debug_in_color') == 'true':
 DEBUGPREFIX = f'{begincolor}[ {name} {pluginversion} | {moduleversion} | {kodiversion} | {sys_platform} | DEBUG | old ]{endcolor}'
 INFOPREFIX = f'{begininfocolor}[ {name} {pluginversion}/{moduleversion} | INFO ]{endcolor}'
 LOGPATH = control.transPath('special://logpath/')
-FILENAME = 'the_crew.log'
+FILENAME = 'the_fuzzy_britches_v4.log'
 LOG_FILE = os.path.join(LOGPATH, FILENAME)
 debug_enabled = control.setting('addon_debug')
 debug_log = control.setting('debug.location')

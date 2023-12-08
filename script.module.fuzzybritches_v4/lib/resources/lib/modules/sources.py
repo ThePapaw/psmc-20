@@ -909,7 +909,7 @@ class sources:
 
         provider = control.setting('hosts.sort.provider') or 'false'
         debrid_only = control.setting('debrid.only') or 'false'
-        sortthecrew = control.setting('torrent.sort.the.crew') or 'false'
+        sortfuzzybritchesv4 = control.setting('torrent.sort.fuzzybritches.v4') or 'false'
         quality = int(control.setting('hosts.quality')) or 0
         captcha = control.setting('hosts.captcha') or 'true'
         show_cams = control.setting('hosts.screener') or 'true'

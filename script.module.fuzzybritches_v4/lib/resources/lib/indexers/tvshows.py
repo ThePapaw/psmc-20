@@ -35,7 +35,7 @@ from resources.lib.modules import views
 from resources.lib.modules import utils
 from resources.lib.modules import log_utils
 from resources.lib.indexers import navigator
-from resources.lib.modules.crewruntime import c
+from resources.lib.modules.fbruntime import c
 
 from bs4 import BeautifulSoup
 
@@ -761,8 +761,8 @@ class tvshows:
             return
 
         try:
-            result = result.replace(r'class="lister-page-next', ' class="crew-next')
-            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': r'crew-next .+?'})
+            result = result.replace(r'class="lister-page-next', ' class="fuzzybritchesv4-next')
+            next = client.parseDOM(result, 'a', ret='href', attrs = {'class': r'fuzzybritchesv4-next .+?'})
 
             if len(next) == 0:
                 next = client.parseDOM(result, 'div', attrs = {'class': u'pagination'})[0]

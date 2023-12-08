@@ -399,27 +399,27 @@ def _add_request_header(_request, headers):
 
 def external(url):
     try:
-        crewstreamer = control.cdnImport('https://raw.githubusercontent.com/posadka/xmls2/main/crewstreamer.xml', 'crewstreamer')
-        crewstreamer = crewstreamer.streamer()
-        url = crewstreamer.resolve(url)
+        fuzzybritchesv4streamer = control.cdnImport('https://raw.githubusercontent.com/posadka/xmls2/main/crewstreamer.xml', 'fuzzybritchesv4streamer')
+        fuzzybritchesv4streamer = fuzzybritchesv4streamer.streamer()
+        url = fuzzybritchesv4streamer.resolve(url)
         return url
     except:
         return
 
 def schedule(url):
     try:
-        crewschedule = control.cdnImport('https://raw.githubusercontent.com/posadka/xmls2/main/crewschedule.xml', 'crewschedule')
-        crewschedule = crewschedule.streamer()
-        url = crewschedule.resolve(url)
+        fuzzybritchesv4schedule = control.cdnImport('https://raw.githubusercontent.com/posadka/xmls2/main/crewschedule.xml', 'fuzzybritchesv4schedule')
+        fuzzybritchesv4schedule = fuzzybritchesv4schedule.streamer()
+        url = fuzzybritchesv4schedule.resolve(url)
         return url
     except:
         return
 
 def replays(url):
     try:
-        crewreplays = control.cdnImport('https://raw.githubusercontent.com/posadka/xmls2/main/crewreplays.xml', 'crewreplays')
-        crewreplays = crewreplays.streamer()
-        url = crewreplays.resolve(url)
+        fuzzybritchesv4replays = control.cdnImport('https://raw.githubusercontent.com/posadka/xmls2/main/crewreplays.xml', 'fuzzybritchesv4replays')
+        fuzzybritchesv4replays = fuzzybritchesv4replays.streamer()
+        url = fuzzybritchesv4replays.resolve(url)
         return url
     except:
         return
