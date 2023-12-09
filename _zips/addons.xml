@@ -476,7 +476,7 @@
     </extension>
 </addon>
 
-<addon id="skin.papaws.azr.redux" version="1.4.3" name="Papaw's AZR Redux" provider-name="The Papaw">
+<addon id="skin.papaws.azr.redux" version="1.4.4" name="Papaw's AZR Redux" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.gui" version="5.15.0"/>
         <import addon="resource.uisounds.pazr" />
