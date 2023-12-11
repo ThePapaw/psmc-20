@@ -394,7 +394,7 @@ msgid "Information"
 msgstr ""
 
 msgctxt "#32102"
-msgid "[COLOR sandybrown]• [/COLOR][COLOR white]Notifications[/COLOR][/B]"
+msgid "[COLOR sandybrown]• [/COLOR][COLOR white]Notifications[/COLOR]"
 msgstr ""
 
 msgctxt "#32103"
@@ -1038,7 +1038,7 @@ msgid "Debug Log"
 msgstr ""
 
 msgctxt "#32618"
-msgid "Kodi Log"
+msgid "PSMC Log"
 msgstr ""
 
 msgctxt "#32619"
@@ -1086,7 +1086,7 @@ msgid "Enable Torrent Scrapers"
 msgstr ""
 
 msgctxt "#32637"
-msgid "[COLOR lightskyblue]Debrid Torrent Settings[/COLOR]"
+msgid "[COLOR lawngreen]Debrid Torrent Settings[/COLOR]"
 msgstr ""
 
 msgctxt "#32638"
@@ -1738,7 +1738,7 @@ msgid "Auto Resume"
 msgstr ""
 
 msgctxt "#90125"
-msgid "Sync on Kodi Start"
+msgid "Sync on PSMC/Kodi Start"
 msgstr ""
 
 msgctxt "#90126"
@@ -1842,7 +1842,7 @@ msgid "[COLOR sandybrown]• [/COLOR][COLOR white]NCAAB[/COLOR]"
 msgstr ""
 
 msgctxt "#90157"
-msgid "[COLOR sandybrown]• [/COLOR][COLOR red]Holiday Cheer[/COLOR][/B]"
+msgid "[COLOR sandybrown]• [/COLOR][COLOR red]Holiday Cheer[/COLOR]"
 msgstr ""
 
 msgctxt "#90158"

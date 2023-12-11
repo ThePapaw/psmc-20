@@ -394,7 +394,7 @@ msgid "Information"
 msgstr ""
 
 msgctxt "#32102"
-msgid "[COLOR sandybrown]• [/COLOR][COLOR white]Notifications[/COLOR][/B]"
+msgid "[COLOR sandybrown]• [/COLOR][COLOR white]Notifications[/COLOR]"
 msgstr ""
 
 msgctxt "#32103"
@@ -1842,7 +1842,7 @@ msgid "[COLOR sandybrown]• [/COLOR][COLOR white]NCAAB[/COLOR]"
 msgstr ""
 
 msgctxt "#90157"
-msgid "[COLOR sandybrown]• [/COLOR][COLOR red]Holiday Cheer[/COLOR][/B]"
+msgid "[COLOR sandybrown]• [/COLOR][COLOR red]Holiday Cheer[/COLOR]"
 msgstr ""
 
 msgctxt "#90158"

@@ -67,7 +67,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.fuzzybritches_v4" version="1.0.2" name="Fuzzy Britches v4" provider-name="The Papaw">
+<addon id="plugin.video.fuzzybritches_v4" version="1.0.3" name="Fuzzy Britches v4" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.fuzzybritches_v4" />
