@@ -363,7 +363,7 @@
     </extension>
 </addon>
 
-<addon id="script.fuzzybritches_v4.artwork" version="1.0.2" name="Fuzzy Britches v4 Artwork" provider-name="The Papaw">
+<addon id="script.fuzzybritches_v4.artwork" version="1.0.3" name="Fuzzy Britches v4 Artwork" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
