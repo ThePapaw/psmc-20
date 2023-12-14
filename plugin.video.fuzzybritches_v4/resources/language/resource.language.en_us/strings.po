@@ -978,7 +978,7 @@ msgid "Getting genre information from Trakt"
 msgstr ""
 
 msgctxt "#32600"
-msgid "Fuzzy Britches is Searching Now"
+msgid "Fuzzy Britches will begin searching now..."
 msgstr ""
 
 msgctxt "#32601"
