@@ -67,7 +67,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.fuzzybritches_v4" version="1.0.4" name="Fuzzy Britches v4" provider-name="The Papaw">
+<addon id="plugin.video.fuzzybritches_v4" version="1.0.5" name="Fuzzy Britches v4" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.fuzzybritches_v4" />
@@ -98,7 +98,6 @@
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works. Use at your own risk!</disclaimer>
         <assets>
             <icon>icon.gif</icon>
-            <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
 			<screenshot>support/screenshot-01.jpg</screenshot>
 			<screenshot>support/bmc-qr.jpg</screenshot>
@@ -364,7 +363,7 @@
     </extension>
 </addon>
 
-<addon id="script.fuzzybritches_v4.artwork" version="1.0.3" name="Fuzzy Britches v4 Artwork" provider-name="The Papaw">
+<addon id="script.fuzzybritches_v4.artwork" version="1.0.5" name="Fuzzy Britches v4 Artwork" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
     </requires>
@@ -380,7 +379,7 @@
 		<source>https://github.com/ThePapaw/psmc-20</source>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works. Use at your own risk!</disclaimer>
         <assets>
-            <icon>icon.png</icon>
+            <icon>icon.gif</icon>
             <fanart>fanart.jpg</fanart>
 			<screenshot>support/screenshot-01.jpg</screenshot>
 			<screenshot>support/bmc-qr.jpg</screenshot>
@@ -418,7 +417,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.fuzzybritches_v4" name="Fuzzy Britches v4 Module" version="1.0.2" provider-name="The Papaw">
+<addon id="script.module.fuzzybritches_v4" name="Fuzzy Britches v4 Module" version="1.0.5" provider-name="The Papaw">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.beautifulsoup4"/>
@@ -431,7 +430,7 @@
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
         <assets>
-            <icon>icon.png</icon>
+            <icon>icon.gif</icon>
             <fanart>fanart.jpg</fanart>
 			<screenshot>support/screenshot-01.jpg</screenshot>
 			<screenshot>support/bmc-qr.jpg</screenshot>
