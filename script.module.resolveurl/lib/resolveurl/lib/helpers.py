@@ -166,14 +166,21 @@ def scrape_sources(html, result_blacklist=None, scheme='http', patterns=None, ge
         labels = []
         for r in re.finditer(regex, _html, re.DOTALL):
             match = r.groupdict()
-            stream_url = match['url'].replace('&amp;', '&')
+            stream_url = match['url']
+            if not (stream_url.startswith('http') or stream_url.startswith('//')):
+                try:
+                    stream_url = b64decode(stream_url)
+                except:
+                    continue
+            if stream_url.startswith('//'):
+                stream_url = scheme + ':' + stream_url
+            stream_url = stream_url.replace('&amp;', '&')
+
             file_name = urllib_parse.urlparse(stream_url[:-1]).path.split('/')[-1] if stream_url.endswith("/") else urllib_parse.urlparse(stream_url).path.split('/')[-1]
             label = match.get('label', file_name)
             if label is None:
                 label = file_name
             blocked = not file_name or any(item in file_name.lower() for item in _blacklist) or any(item in label for item in _blacklist)
-            if stream_url.startswith('//'):
-                stream_url = scheme + ':' + stream_url
             if '://' not in stream_url or blocked or (stream_url in streams) or any(stream_url == t[1] for t in source_list):
                 continue
             labels.append(label)
@@ -211,9 +218,59 @@ def scrape_sources(html, result_blacklist=None, scheme='http', patterns=None, ge
     return source_list
 
 
-def get_media_url(url, result_blacklist=None, patterns=None, generic_patterns=True, referer=True, redirect=True, verifypeer=True):
+def scrape_subtitles(html, rurl='', scheme='http', patterns=None, generic_patterns=True):
     if patterns is None:
         patterns = []
+
+    def __parse_to_dict(_html, regex):
+        labels = []
+        subs = []
+        for r in re.finditer(regex, _html, re.DOTALL):
+            match = r.groupdict()
+            subs_url = match.get('url').replace('&amp;', '&')
+            file_name = urllib_parse.urlparse(subs_url[:-1]).path.split('/')[-1] if subs_url.endswith("/") else urllib_parse.urlparse(subs_url).path.split('/')[-1]
+            label = match.get('label', file_name)
+            if label is None:
+                label = file_name
+            if subs_url.startswith('//'):
+                subs_url = scheme + ':' + subs_url
+            elif subs_url.startswith('/'):
+                subs_url = urllib_parse.urljoin(rurl, subs_url)
+            if '://' not in subs_url or (subs_url in subs):
+                continue
+            labels.append(label)
+            subs.append(subs_url)
+
+        matches = {lang: url for lang, url in zip(labels, subs) if len(lang) > 1}
+        if matches:
+            common.logger.log_debug('Scrape sources |%s| found |%s|' % (regex, matches))
+        return matches
+
+    html = html.replace(r"\/", "/")
+    html += get_packed_data(html)
+
+    subtitles = {}
+    if generic_patterns or not patterns:
+        subtitles.update(__parse_to_dict(html, r'''{\s*file:\s*["'](?P<url>[^"']+)["'],\s*label:\s*["'](?P<label>[^"']+)["'],\s*kind:\s*["'](?:captions|subtitles)["']'''))
+        subtitles.update(__parse_to_dict(html, r'''<track\s*kind=['"]?(?:captions|subtitles)['"]?\s*src=['"](?P<url>[^'"]+)['"]\s*srclang=['"](?P<label>[^'"]+)'''))
+        subtitles.update(__parse_to_dict(html, r'''<track\s*kind="(?:captions|subtitles)"\s*label="(?P<label>[^"]+)"\s*srclang="[^"]+"\s*src="(?P<url>[^"]+)'''))
+        subtitles.update(__parse_to_dict(html, r'''"tracks":.+?"kind":\s*"captions",\s*"file":\s*"(?P<url>[^"]+).+?"label":\s*"(?P<label>[^"]+)'''))
+
+    for regex in patterns:
+        subtitles.update(__parse_to_dict(html, regex))
+
+    return subtitles
+
+
+def get_media_url(
+        url, result_blacklist=None, subs=False,
+        patterns=None, generic_patterns=True,
+        subs_patterns=None, generic_subs_patterns=True,
+        referer=True, redirect=True, verifypeer=True):
+    if patterns is None:
+        patterns = []
+    if subs_patterns is None:
+        subs_patterns = []
     scheme = urllib_parse.urlparse(url).scheme
     if result_blacklist is None:
         result_blacklist = []
@@ -239,8 +296,11 @@ def get_media_url(url, result_blacklist=None, patterns=None, generic_patterns=Tr
     if not verifypeer:
         headers.update({'verifypeer': 'false'})
     source_list = scrape_sources(html, result_blacklist, scheme, patterns, generic_patterns)
-    source = pick_source(source_list)
-    return source + append_headers(headers)
+    source = (pick_source(source_list)).replace(' ', '%20') + append_headers(headers)
+    if subs:
+        subtitles = scrape_subtitles(html, rurl, scheme, subs_patterns, generic_subs_patterns)
+        return source, subtitles
+    return source
 
 
 def cleanse_html(html):
@@ -346,7 +406,7 @@ def get_redirect_url(url, headers={}, form_data=None):
     return response.headers.get('location') or url
 
 
-def girc(page_data, url, co):
+def girc(page_data, url, co=None):
     """
     Code adapted from https://github.com/vb6rocod/utils/
     Copyright (C) 2019 vb6rocod
@@ -360,6 +420,8 @@ def girc(page_data, url, co):
     aurl = 'https://www.google.com/recaptcha/api2'
     key = re.search(r'(?:src="{0}\?.*?render|data-sitekey)="?([^"]+)'.format(rurl), page_data)
     if key:
+        if co is None:
+            co = b64encode((url[:-1] + ':443')).replace('=', '')
         key = key.group(1)
         rurl = '{0}?render={1}'.format(rurl, key)
         page_data1 = net.http_GET(rurl, headers=hdrs).content
