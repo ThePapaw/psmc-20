@@ -1,6 +1,6 @@
 """
     Plugin for ResolveURL
-    Copyright (C) 2017 zlootec
+    Copyright (C) 2024 MrDini123 (github.com/movieshark)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,19 +20,19 @@ from resolveurl.lib import helpers
 from resolveurl.plugins.__resolve_generic__ import ResolveGeneric
 
 
-class VidStoreResolver(ResolveGeneric):
-    name = 'VidStore'
-    domains = ['vidstore.me']
-    pattern = r'(?://|\.)(vidstore\.me)/(.+)'
+class AmdaHostResolver(ResolveGeneric):
+    name = 'AmdaHost'
+    domains = ['amdahost.com']
+    pattern = r'(?://|\.)(amdahost\.com)/watch(?:_direct)?.php\?id=([0-9a-zA-Z]+)'
 
     def get_media_url(self, host, media_id, subs=False):
         return helpers.get_media_url(
             self.get_url(host, media_id),
-            patterns=[r'''<source\s*src=['"](?P<url>[^'"]+)['"]\s*type=['"]video/mp4['"]'''],
-            generic_patterns=False,
             referer=True,
-            subs=subs,
+            patterns=[r'''id="myVideo.+?data-src="(?P<url>[^"]+)'''],
+            generic_patterns=False,
+            subs=subs
         )
 
     def get_url(self, host, media_id):
-        return self._default_get_url(host, media_id, template='https://www.{host}/{media_id}')
+        return self._default_get_url(host, media_id, template='https://www.{host}/watch.php?id={media_id}')

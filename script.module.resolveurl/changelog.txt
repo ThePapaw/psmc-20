@@ -1,18 +1,18 @@
-Version 5.1.135 (May 19, 2024)
+Version 5.1.137 (June 3, 2024)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - 1cloudfile
-    - dailyuploads
-    - darkibox
-    - uploady
+    - None
 
 - Resolvers Fixed/Updated:
-    - allviid
-    - dembed
+    - filelions
+    - filemoon
+    - mixdrop
     - send
     - streamwish
+    - supervideo
+    - vidstore
     - voe
 
 - Resolvers Removed
